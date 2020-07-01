@@ -25,4 +25,4 @@ def amazon_search(search_term):
     return name_list, price_list
 
 
-amazon_search("")
+print(amazon_search(input("Search Term\n> ")))
