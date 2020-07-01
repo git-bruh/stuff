@@ -1,0 +1,26 @@
+# Enter Host Sources Here, Separated By A Newline
+
+# Block ADS/Trackers
+
+https://someonewhocares.org/hosts/hosts
+https://mirror1.malwaredomains.com/files/immortal_domains.txt
+https://adaway.org/hosts.txt
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext
+https://pgl.yoyo.org/adservers/admiral-domains.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt
+https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+https://gitlab.com/ZeroDot1/CoinBlockerLists/raw/master/hosts
+
+# Block GAFAM
+
+https://raw.githubusercontent.com/nickspaargaren/no-google/master/google-domains
+# https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/amazon/all
+https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/facebook/all
+# https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/apple/all
+https://raw.githubusercontent.com/jmdugan/blocklists/master/corporations/microsoft/all
+
+# Block Telemetry
+https://raw.githubusercontent.com/CHEF-KOCH/nVidia-modded-Inf/master/Telemetry/HOSTS/HOSTS
