@@ -1,41 +1,26 @@
 import pyperclip
 
 
-while True:
-    character_limit = int(input("Character Limit : " ))
-    input_text = str(input("Input : "))
-    length = len(input_text)
-    separator = ","
-    if length > character_limit:
-        print(f"Text is {length} characters long... Split ? (y/n)")
-        choice = input("> ").lower()
-        if "y" in choice:
-            # Add separator after every character_limit characters
-            new_string = ''
-            while input_text != '':
-                new_string += input_text[:character_limit] + '~'
-                input_text = input_text[character_limit:]
-            new_string = new_string[:-1]
-            print(new_string)
-            # Split String
-            output = new_string.split("~")
-            # variables = len(output)
-            # print(variables)
-            # user_variables = input("Type a, b, c ... according to the number above")
-            # user_variables = output
-            # print(user_variables)
-            # input = input("Press [ENTER] to copy to clipboard")
-            # if '' in input:
-            #     pyperclip.copy()
-        else:
-            break
-    elif length <= character_limit:
-        print("There is nothing to do... Quitting")
-        break
-# og_str = "Every nth character should have a comma no more no less"
-# n = 10
-# new_str = ''
-# while og_str != '':
-#     new_str += og_str[:n] + ','
-#     og_str = og_str[n:]
-# print(new_str)
+def string_split(string):
+    max_len = int(input("Max Length: ")) + 1
+    if len(string) <= max_len:
+        print("Break")
+        return
+    new_str = ""
+    while string != "":
+        new_str += string[:max_len] + "/|"
+        string = string[max_len:]
+    str_list = new_str.split("/|")
+    count = 0
+    str_count = len(str_list)
+    for string in str_list:
+        count += 1
+        input_ = input("Press ENTER to copy string {} of {}".format(
+            count, str_count))
+        if '' in input_:
+            pyperclip.copy(string)
+            print("Copied Successfully!")
+
+
+if __name__ == "__main__":
+    string_split(input("String: "))
