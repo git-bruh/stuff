@@ -15,7 +15,7 @@ httpcore==0.10.2
 httpx==0.14.3
 hyperframe==5.2.0
 idna==2.10
-lxml==4.6.2
+lxml==4.6.3
 multidict==4.7.6
 rfc3986==1.4.0
 sniffio==1.1.0
